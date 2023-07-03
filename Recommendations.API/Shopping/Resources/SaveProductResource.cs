@@ -15,6 +15,8 @@ public class SaveProductResource
     [Required]
     public float Precio { get; set; }
     [Required]
+    public string Claves { get; set; }
+    [Required]
     public string Url { get; set; }
     [Required]
     public string Categoria { get; set; }

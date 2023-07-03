@@ -23,6 +23,7 @@ public class AppDbContext: DbContext
         builder.Entity<Product>().Property(p => p.Descripcion).IsRequired();
         builder.Entity<Product>().Property(p => p.Caracteristicas).IsRequired();
         builder.Entity<Product>().Property(p => p.Precio).IsRequired();
+        builder.Entity<Product>().Property(p => p.Claves).IsRequired();
         builder.Entity<Product>().Property(p => p.Url).IsRequired();
         builder.Entity<Product>().Property(p => p.Categoria).IsRequired();
         builder.Entity<Product>().Property(p => p.Subcategoria).IsRequired();
